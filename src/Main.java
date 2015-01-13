@@ -1,3 +1,5 @@
+import java.util.Hashtable;
+
 public class Main {
 	public static void main (String [ ] Args) {
 	        Museo museo = new Museo ();
@@ -25,6 +27,20 @@ public class Main {
 	        System.out.print("\nDireccion:" + parque.getDireccionep());
 	        System.out.print("\nArea:" + parque.getArea() + "m2");
 	        System.out.print("\n¿Infantil?:" + parque.getInfantil() + "\n");
+
+	        //Hashtable
+
+	        Hashtable<String,String> otrosEspacios = new Hashtable<String,String>();
+
+	        otrosEspacios.put("Playa", "Zurriola");
+			otrosEspacios.put("Plaza", "Zumardi");
+			otrosEspacios.put("Biblioteca", "Madalen");
+			otrosEspacios.put("Hospital", "Edificio Gipuzkoa");
+
+
+			System.out.print("\n\n--- Hashtable erabiltzen: \n");
+			System.out.println(otrosEspacios.get("Playa"));
+			System.out.println(otrosEspacios.get("Hospital"));
 	        
 	}
 }
